@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicando a calculadora</title>
+
+    <style>
+        /* Resetando margens e padding padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Definindo o fundo da página com gradiente */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #ba9df4, #aedddd,  #c999af);
+            color: white;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Estilo para o container principal */
+        #explicacao {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Títulos principais */
+        h3, h4 {
+            font-size: 1.6em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Parágrafos e textos */
+        p, ul, ol {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        /* Estilo para listas */
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        /* Itens da lista */
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Destaques para os textos importantes */
+        strong {
+            color: #6d28d9;
+            font-weight: bold;
+        }
+
+        /* Estilo para código ou pre */
+        pre {
+            background-color: #f3f4f6;
+            padding: 10px;
+            border-radius: 5px;
+            color: #333;
+            font-family: "Courier New", monospace;
+        }
+
+        /* Estilo para links (caso tenha algum no futuro) */
+        a {
+            color: #6d28d9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+        <div id="explicacao">
+            <h3>Como funciona a calculadora?</h3>
+            <p>A calculadora de parcelas de empréstimo foi desenvolvida para ajudar você a calcular o valor das parcelas mensais de um empréstimo, levando em consideração o valor emprestado, a taxa de juros e o número de meses para o pagamento.</p>
+            
+            <h4>Fórmula utilizada:</h4>
+            <p>A fórmula utilizada para calcular as parcelas mensais fixas (PMT) é a seguinte:</p>
+            <pre>
+PMT = (P × i) / (1 - (1 + i)^-n)
+            </pre>
+            <p>Onde:</p>
+            <ul>
+                <li><strong>PMT</strong>: Valor da parcela mensal.</li>
+                <li><strong>P</strong>: Valor do empréstimo inicial (capital).</li>
+                <li><strong>i</strong>: Taxa de juros mensal (em forma decimal).</li>
+                <li><strong>n</strong>: Número de parcelas (meses).</li>
+            </ul>
+            
+            <h4>Passo a passo do cálculo:</h4>
+            <ol>
+                <li>O valor do empréstimo (P), a taxa de juros mensal (i) e o número de meses (n) são fornecidos pelo usuário.</li>
+                <li>A taxa de juros (i) é convertida de percentual para forma decimal (ex: 5% se torna 0,05).</li>
+                <li>Com base nos valores inseridos, a fórmula é aplicada para calcular o valor da parcela mensal fixa (PMT).</li>
+                <li>Além disso, o valor total pago ao final do empréstimo é calculado multiplicando o valor da parcela mensal pelo número de parcelas.</li>
+            </ol>
+
+            <h4>Exemplo:</h4>
+            <p>Se você tiver um empréstimo de <strong>R$ 1.000</strong>, uma taxa de juros de <strong>2% ao mês</strong> e um prazo de <strong>12 meses</strong>, o cálculo será:</p>
+            <ul>
+                <li><strong>Parcela mensal</strong>: R$ 92,33</li>
+                <li><strong>Total pago ao final</strong>: R$ 1.107,96</li>
+            </ul>
+            <p>Esse valor da parcela será o que você pagará mensalmente, e o total pago é a soma de todas as parcelas durante o período.</p>
+        </div>
+    </main>
+</body>
+</html>
